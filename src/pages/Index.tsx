@@ -22,7 +22,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-8 relative z-10">
         <section className="min-h-screen flex flex-col items-center justify-center space-y-8 px-4">
           <h1 className="text-3xl md:text-6xl font-bold text-primary playfair text-center animate-fade-in px-2">
-            Happy 21st Birthday, Sneha Shamili !
+            Happy 21st Birthday, Sneha Sharmili !
           </h1>
           <Timer targetDate="2025-02-23" />
           <BirthdayMessage />
