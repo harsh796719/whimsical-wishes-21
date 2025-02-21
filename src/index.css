@@ -33,11 +33,22 @@
   }
   
   .typing-text {
-    @apply overflow-hidden whitespace-nowrap border-r-2 border-primary animate-type;
+    @apply overflow-hidden whitespace-pre-wrap break-words border-r-2 border-primary;
+    animation: typing 3s steps(50, end);
+    max-width: 100%;
   }
   
   .reason-card {
     @apply p-6 rounded-lg bg-white/80 backdrop-blur-sm shadow-lg transition-all hover:scale-105;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 

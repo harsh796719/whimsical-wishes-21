@@ -28,9 +28,11 @@ export const BirthdayMessage = () => {
           </span>
         ))}
       </div>
-      <p className="typing-text text-base sm:text-lg md:text-xl text-white/90 mb-4 sm:mb-6 backdrop-blur-sm p-3 sm:p-4 rounded-lg">
-        To my amazing best friend, who lights up every room she enters...
-      </p>
+      <div className="relative overflow-hidden w-full mb-4 sm:mb-6">
+        <p className="typing-text text-base sm:text-lg md:text-xl text-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg min-h-[60px] sm:min-h-[70px]">
+          To my amazing best friend, who lights up every room she enters...
+        </p>
+      </div>
       <p className="text-sm sm:text-base md:text-lg text-white/80 leading-relaxed bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-lg mx-4 sm:mx-0">
         Twenty-one years of bringing joy, laughter, and endless adventures to everyone around you. 
         Here's to celebrating you and all the wonderful moments we've shared together.
