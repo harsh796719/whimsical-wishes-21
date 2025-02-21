@@ -3,23 +3,23 @@ import { useState } from 'react';
 
 const reasons = [
   {
-    text: "Your contagious laughter that brightens everyone's day",
-    emoji: "😊",
+    text: "Your habit of overthinking every tiny thing, even when there’s nothing to overthink",
+    emoji: "😆🌀",
     color: "from-pink-200 to-purple-200"
   },
   {
-    text: "Your incredible strength and resilience in facing challenges",
-    emoji: "💪",
+    text: "Your reaction when I irritate you—it’s priceless and totally worth it",
+    emoji: "😈😂",
     color: "from-blue-200 to-indigo-200"
   },
   {
-    text: "The way you always know how to make me smile",
-    emoji: "🌟",
+    text: "How you somehow read my mind and say exactly what I was about to say",
+    emoji: "🔮😆",
     color: "from-yellow-200 to-orange-200"
   },
   {
-    text: "Your creativity and unique perspective on life",
-    emoji: "🎨",
+    text: "The way you play badminton like you're in the Olympics",
+    emoji: "🏸🔥",
     color: "from-green-200 to-teal-200"
   },
   {
@@ -28,8 +28,8 @@ const reasons = [
     color: "from-purple-200 to-pink-200"
   },
   {
-    text: "The passion you bring to everything you do",
-    emoji: "🔥",
+    text: "Your stylish outfits that I only get to see in photos and never in real life",
+    emoji: "😆👗",
     color: "from-red-200 to-orange-200"
   },
   {
@@ -38,13 +38,13 @@ const reasons = [
     color: "from-indigo-200 to-blue-200"
   },
   {
-    text: "Your ability to find humor in any situation",
-    emoji: "😂",
+    text: "How our thoughts sync up like we share the same brain",
+    emoji: "🧠⚡",
     color: "from-yellow-200 to-green-200"
   },
   {
-    text: "The way you dance like nobody's watching",
-    emoji: "💃",
+    text: "How we can talk about the most random things and somehow make it deep",
+    emoji: "🤯💬",
     color: "from-pink-200 to-red-200"
   },
   {
@@ -53,18 +53,18 @@ const reasons = [
     color: "from-red-200 to-pink-200"
   },
   {
-    text: "Your determination to chase your dreams",
-    emoji: "✨",
+    text: "The fact that you had the courage to confess, even if destiny messed it up",
+    emoji: "💌💖",
     color: "from-purple-200 to-blue-200"
   },
   {
-    text: "The silly faces you make in our photos",
-    emoji: "🤪",
+    text: "How you express your feelings in small but meaningful ways after one peg",
+    emoji: "📝🤪",
     color: "from-orange-200 to-yellow-200"
   },
   {
-    text: "Your incredible cooking skills (especially those cookies)",
-    emoji: "🍪",
+    text: "Your online presence feels more real than people I meet in person",
+    emoji: "📱💖",
     color: "from-amber-200 to-orange-200"
   },
   {
@@ -73,38 +73,38 @@ const reasons = [
     color: "from-teal-200 to-green-200"
   },
   {
-    text: "Your spontaneous adventure ideas",
-    emoji: "🌈",
+    text: "How you pretend to be unaffected by my teasing, but I know you secretly enjoy it",
+    emoji: "😜😂",
     color: "from-blue-200 to-purple-200"
   },
   {
-    text: "The honest advice you always give",
-    emoji: "🤔",
+    text: "How our friendship survived distance, misunderstandings, and my constant teasing",
+    emoji: "🔥💯",
     color: "from-indigo-200 to-violet-200"
   },
   {
-    text: "Your terrible puns that somehow make everyone laugh",
-    emoji: "🃏",
+    text: "The way you act all shy, but I know there’s a savage side hiding inside you",
+    emoji: "😏🔥",
     color: "from-fuchsia-200 to-pink-200"
   },
   {
-    text: "The way you stand up for what you believe in",
-    emoji: "👊",
+    text: "Your ability to be both an introvert and a social butterfly, depending on the situation",
+    emoji: "🦋😶",
     color: "from-rose-200 to-red-200"
   },
   {
-    text: "Your ability to make everyone feel special",
-    emoji: "🌟",
+    text: "The fact that after all these years, we’re still this close, even without meeting in person",
+    emoji: "🚀💙",
     color: "from-yellow-200 to-amber-200"
   },
   {
-    text: "The countless memories we've created together",
-    emoji: "📸",
+    text: "The way you analyze every little detail in life like it’s a detective case",
+    emoji: "🕵️‍♀️🔎",
     color: "from-violet-200 to-purple-200"
   },
   {
-    text: "Simply being you - the most amazing friend anyone could ask for",
-    emoji: "👑",
+    text: "Simply being you—the shy, strong, stylish, and irreplaceable best friend I wouldn't trade for anything",
+    emoji: "👑💖",
     color: "from-amber-200 to-yellow-200"
   }
 ];
