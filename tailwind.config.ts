@@ -83,6 +83,19 @@ export default {
           "0%": { width: "0" },
           "100%": { width: "100%" },
         },
+        sparkle: {
+          "0%, 100%": { transform: "scale(0) rotate(0deg)" },
+          "50%": { transform: "scale(1) rotate(180deg)" },
+        },
+        "color-change": {
+          "0%, 100%": { color: "#9b87f5" },
+          "33%": { color: "#E5DEFF" },
+          "66%": { color: "#7E69AB" },
+        },
+        bounce: {
+          "0%, 100%": { transform: "translateY(-25%)", animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)" },
+          "50%": { transform: "translateY(0)", animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -92,6 +105,9 @@ export default {
         "slide-up": "slide-up 0.5s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
         type: "type 3s steps(50, end)",
+        sparkle: "sparkle 2s ease-in-out infinite",
+        "color-change": "color-change 5s ease-in-out infinite",
+        bounce: "bounce 1s infinite"
       },
     },
   },

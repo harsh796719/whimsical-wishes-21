@@ -27,6 +27,7 @@ const reasons = [
 
 export const ReasonsGrid = () => {
   const [visibleReasons, setVisibleReasons] = useState<number[]>([]);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const handleReasonClick = (index: number) => {
     if (!visibleReasons.includes(index)) {
@@ -36,23 +37,39 @@ export const ReasonsGrid = () => {
 
   return (
     <div className="space-y-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-primary playfair mb-8 animate-fade-in">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-primary playfair mb-8 animate-color-change">
         21 Reasons Why You're Amazing
+        <span className="inline-block ml-2 animate-bounce">✨</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {reasons.map((reason, index) => (
           <div
             key={index}
-            className={`reason-card cursor-pointer ${
-              visibleReasons.includes(index) ? 'opacity-100' : 'opacity-40'
-            }`}
+            className={`reason-card cursor-pointer transition-all duration-300 transform
+              ${visibleReasons.includes(index) ? 'opacity-100' : 'opacity-40'}
+              ${hoveredIndex === index ? 'scale-105 shadow-xl' : ''}
+              hover:bg-gradient-to-br from-white/90 to-primary/10`}
             onClick={() => handleReasonClick(index)}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            <p className="text-lg font-medium text-secondary">
-              {visibleReasons.includes(index) ? reason : "Click to reveal..."}
+            <p className={`text-lg font-medium ${visibleReasons.includes(index) ? 'text-secondary animate-fade-in' : 'text-primary'}`}>
+              {visibleReasons.includes(index) ? (
+                <>
+                  {reason}
+                  <span className="inline-block ml-2 animate-sparkle">✨</span>
+                </>
+              ) : (
+                <span className="animate-pulse">Click to reveal...</span>
+              )}
             </p>
           </div>
         ))}
+      </div>
+      <div className="text-center mt-4 text-white/60">
+        <p className="animate-float">
+          {visibleReasons.length}/21 reasons revealed
+        </p>
       </div>
     </div>
   );
