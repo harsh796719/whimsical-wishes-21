@@ -21,7 +21,10 @@ export const Timer = ({ targetDate }: { targetDate: string }) => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = +new Date(targetDate) - +new Date();
+      const now = new Date(); // Current local time
+      const target = new Date(targetDate + "T00:00:00"); // Ensuring local time (Midnight)
+
+      const difference = target.getTime() - now.getTime();
 
       if (difference > 0) {
         setTimeLeft({
@@ -32,9 +35,8 @@ export const Timer = ({ targetDate }: { targetDate: string }) => {
         });
       } else {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        setShowConfetti(true); // Show celebration when time reaches 0
+        setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 7000);
-
       }
     };
 
@@ -46,7 +48,6 @@ export const Timer = ({ targetDate }: { targetDate: string }) => {
 
   return (
     <div className="relative flex flex-col items-center justify-center">
-      {/* Celebration Effect */}
       {showConfetti && <Confetti width={width} height={height} />}
 
       <div className="flex flex-nowrap justify-center gap-4 px-2 min-h-[100px]">
@@ -60,13 +61,6 @@ export const Timer = ({ targetDate }: { targetDate: string }) => {
           </div>
         ))}
       </div>
-
-      {/* Celebration Message */}
-      {/* {showConfetti && (
-        <h2 className="text-3xl font-bold mt-4 text-green-500 animate-bounce">
-          🎉 Celebration Time! 🎉
-        </h2>
-      )} */}
     </div>
   );
 };
