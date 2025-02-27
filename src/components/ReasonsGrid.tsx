@@ -3,107 +3,107 @@ import { useState } from 'react';
 
 const reasons = [
   {
-    text: "Your habit of overthinking every tiny thing, even when there’s nothing to overthink",
+    text: "1",
     emoji: "😆🌀",
     color: "from-pink-200 to-purple-200"
   },
   {
-    text: "Your reaction when I irritate you—it’s priceless and totally worth it",
+    text: "2",
     emoji: "😈😂",
     color: "from-blue-200 to-indigo-200"
   },
   {
-    text: "How you somehow read my mind and say exactly what I was about to say",
+    text: "3",
     emoji: "🔮😆",
     color: "from-yellow-200 to-orange-200"
   },
   {
-    text: "The way you play badminton like you're in the Olympics",
+    text: "4",
     emoji: "🏸🔥",
     color: "from-green-200 to-teal-200"
   },
   {
-    text: "Your unwavering loyalty as a friend",
+    text: "5",
     emoji: "🤝",
     color: "from-purple-200 to-pink-200"
   },
   {
-    text: "Your stylish outfits that I only get to see in photos and never in real life",
+    text: "6",
     emoji: "😆👗",
     color: "from-red-200 to-orange-200"
   },
   {
-    text: "Your amazing taste in music (even the questionable ones)",
+    text: "7",
     emoji: "🎵",
     color: "from-indigo-200 to-blue-200"
   },
   {
-    text: "How our thoughts sync up like we share the same brain",
+    text: "8",
     emoji: "🧠⚡",
     color: "from-yellow-200 to-green-200"
   },
   {
-    text: "How we can talk about the most random things and somehow make it deep",
+    text: "9",
     emoji: "🤯💬",
     color: "from-pink-200 to-red-200"
   },
   {
-    text: "Your kind and generous heart",
+    text: "10",
     emoji: "❤️",
     color: "from-red-200 to-pink-200"
   },
   {
-    text: "The fact that you had the courage to confess, even if destiny messed it up",
+    text: "11",
     emoji: "💌💖",
     color: "from-purple-200 to-blue-200"
   },
   {
-    text: "How you express your feelings in small but meaningful ways after one peg",
+    text: "12",
     emoji: "📝🤪",
     color: "from-orange-200 to-yellow-200"
   },
   {
-    text: "Your online presence feels more real than people I meet in person",
+    text: "13",
     emoji: "📱💖",
     color: "from-amber-200 to-orange-200"
   },
   {
-    text: "The way you remember little details about everyone",
+    text: "14",
     emoji: "🎯",
     color: "from-teal-200 to-green-200"
   },
   {
-    text: "How you pretend to be unaffected by my teasing, but I know you secretly enjoy it",
+    text: "15",
     emoji: "😜😂",
     color: "from-blue-200 to-purple-200"
   },
   {
-    text: "How our friendship survived distance, misunderstandings, and my constant teasing",
+    text: "16",
     emoji: "🔥💯",
     color: "from-indigo-200 to-violet-200"
   },
   {
-    text: "The way you act all shy, but I know there’s a savage side hiding inside you",
+    text: "17",
     emoji: "😏🔥",
     color: "from-fuchsia-200 to-pink-200"
   },
   {
-    text: "Your ability to be both an introvert and a social butterfly, depending on the situation",
+    text: "18",
     emoji: "🦋😶",
     color: "from-rose-200 to-red-200"
   },
   {
-    text: "The fact that after all these years, we’re still this close, even without meeting in person",
+    text: "19",
     emoji: "🚀💙",
     color: "from-yellow-200 to-amber-200"
   },
   {
-    text: "The way you analyze every little detail in life like it’s a detective case",
+    text: "20",
     emoji: "🕵️‍♀️🔎",
     color: "from-violet-200 to-purple-200"
   },
   {
-    text: "Simply being you—the shy, strong, stylish, and irreplaceable best friend I wouldn't trade for anything",
+    text: "21",
     emoji: "👑💖",
     color: "from-amber-200 to-yellow-200"
   }
